@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dados", "Dados\Dados.csproj", "{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geston", "Geston\Geston.csproj", "{70D8F4A6-299F-4F20-B3A4-88547361FAFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Debug|x86.ActiveCfg = Debug|x86
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Debug|x86.Build.0 = Debug|x86
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Release|Any CPU.ActiveCfg = Release|x86
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Release|x86.ActiveCfg = Release|x86
+		{EF40CC56-24AE-4F32-A636-33D0E3CDDD60}.Release|x86.Build.0 = Release|x86
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{70D8F4A6-299F-4F20-B3A4-88547361FAFE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EDF9DF5-B5B8-409B-864D-EA81D37385DB}
+	EndGlobalSection
+EndGlobal
