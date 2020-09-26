@@ -101,5 +101,10 @@ namespace Geston.Forms
             txtUf.Text = Cliente.Uf;
             txtEmail.Text = "email@email.com";//Cliente.Email
         }
+
+        private void iconADD_Click(object sender, EventArgs e)
+        {
+            new AddClienteForm().Show();
+        }
     }
 }

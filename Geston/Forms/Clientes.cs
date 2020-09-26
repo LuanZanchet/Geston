@@ -30,7 +30,7 @@ namespace Geston
             cliente.Bairro = "Centro";
             cliente.Email = "Email@Email.com";
 
-            var a = dal.Inserir(cliente);
+            var a = dal.Insert(cliente);
        
             MessageBox.Show("Cliente inserido com o ID: "+a.ToString());
            

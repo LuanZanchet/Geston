@@ -12,7 +12,7 @@ namespace Dados.Data
         #endregion
 
         #region Métodos publicos
-        public virtual long Inserir(T t)
+        public virtual long Insert(T t)
         {
             return GlobalConnection.Connection.Insert<T>(t);
         }

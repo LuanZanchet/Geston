@@ -1,4 +1,5 @@
 ﻿using Geston.Dal;
+using Geston.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -84,6 +85,30 @@ namespace Geston.Forms
             txtEmail.Text = "email@email.com";//Cliente.Email
         }
 
-       
+        private void iconSalvar_Click(object sender, EventArgs e)
+        {
+        
+            ClienteRepository.Insert(GetDadosTela());
+        }
+
+        private Cliente GetDadosTela()
+        {
+            var Cliente = new Cliente();
+            Cliente.Email = txtEmail.Text;
+            Cliente.Bairro = txtBairro.Text;
+            Cliente.Celular = txtCelular.Text;
+            Cliente.Cep = txtCep.Text;
+            Cliente.Cidade = txtCidade.Text;
+            Cliente.Complemento = txtComplemento.Text;
+            Cliente.Cpf = txtCpf.Text;
+            Cliente.Email = txtEmail.Text;
+            Cliente.Nascimento = txtNascimento.Text;
+            Cliente.Nome= txtNome.Text;
+            Cliente.Numero = txtNumero.Text;
+            Cliente.Rua = txtRua.Text;
+            Cliente.Telefone = txtTelefone.Text;
+            Cliente.Uf = txtUf.Text;
+            return Cliente;
+        }
     }
 }

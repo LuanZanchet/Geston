@@ -99,7 +99,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(461, 572);
             this.panel1.TabIndex = 0;
-     
             // 
             // button8
             // 
@@ -111,14 +110,13 @@
             this.button8.Size = new System.Drawing.Size(151, 64);
             this.button8.TabIndex = 36;
             this.button8.UseVisualStyleBackColor = true;
-
             // 
             // iconExcluir
             // 
             this.iconExcluir.FlatAppearance.BorderSize = 0;
             this.iconExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconExcluir.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconExcluir.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.iconExcluir.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.iconExcluir.IconColor = System.Drawing.Color.Black;
             this.iconExcluir.IconSize = 35;
             this.iconExcluir.Location = new System.Drawing.Point(55, 476);
@@ -127,7 +125,6 @@
             this.iconExcluir.Size = new System.Drawing.Size(46, 50);
             this.iconExcluir.TabIndex = 35;
             this.iconExcluir.UseVisualStyleBackColor = true;
-           
             // 
             // iconSalvar
             // 
@@ -143,7 +140,7 @@
             this.iconSalvar.Size = new System.Drawing.Size(46, 50);
             this.iconSalvar.TabIndex = 34;
             this.iconSalvar.UseVisualStyleBackColor = true;
-   
+            this.iconSalvar.Click += new System.EventHandler(this.iconSalvar_Click);
             // 
             // txtCelular
             // 
@@ -159,7 +156,6 @@
             this.txtCelular.Size = new System.Drawing.Size(192, 23);
             this.txtCelular.TabIndex = 33;
             this.txtCelular.UseSystemPasswordChar = false;
-          
             // 
             // materialLabel12
             // 
@@ -173,7 +169,6 @@
             this.materialLabel12.Size = new System.Drawing.Size(60, 19);
             this.materialLabel12.TabIndex = 32;
             this.materialLabel12.Text = "Celular:";
-          
             // 
             // txtTelefone
             // 
@@ -189,7 +184,6 @@
             this.txtTelefone.Size = new System.Drawing.Size(224, 23);
             this.txtTelefone.TabIndex = 31;
             this.txtTelefone.UseSystemPasswordChar = false;
-        
             // 
             // materialLabel13
             // 
@@ -203,7 +197,6 @@
             this.materialLabel13.Size = new System.Drawing.Size(72, 19);
             this.materialLabel13.TabIndex = 30;
             this.materialLabel13.Text = "Telefone:";
-        
             // 
             // txtNascimento
             // 
@@ -219,7 +212,6 @@
             this.txtNascimento.Size = new System.Drawing.Size(137, 23);
             this.txtNascimento.TabIndex = 29;
             this.txtNascimento.UseSystemPasswordChar = false;
-
             // 
             // materialLabel11
             // 
@@ -233,7 +225,6 @@
             this.materialLabel11.Size = new System.Drawing.Size(95, 19);
             this.materialLabel11.TabIndex = 28;
             this.materialLabel11.Text = "Nascimento:";
-
             // 
             // txtCidade
             // 
@@ -249,7 +240,7 @@
             this.txtCidade.Size = new System.Drawing.Size(178, 23);
             this.txtCidade.TabIndex = 25;
             this.txtCidade.UseSystemPasswordChar = false;
-// 
+            // 
             // materialLabel10
             // 
             this.materialLabel10.AutoSize = true;
@@ -262,7 +253,6 @@
             this.materialLabel10.Size = new System.Drawing.Size(59, 19);
             this.materialLabel10.TabIndex = 24;
             this.materialLabel10.Text = "Cidade:";
-
             // 
             // txtUf
             // 
@@ -278,7 +268,6 @@
             this.txtUf.Size = new System.Drawing.Size(64, 23);
             this.txtUf.TabIndex = 23;
             this.txtUf.UseSystemPasswordChar = false;
-
             // 
             // materialLabel8
             // 
@@ -307,7 +296,6 @@
             this.txtCep.Size = new System.Drawing.Size(133, 23);
             this.txtCep.TabIndex = 21;
             this.txtCep.UseSystemPasswordChar = false;
-
             // 
             // materialLabel9
             // 
@@ -321,7 +309,6 @@
             this.materialLabel9.Size = new System.Drawing.Size(39, 19);
             this.materialLabel9.TabIndex = 20;
             this.materialLabel9.Text = "Cep:";
-
             // 
             // txtComplemento
             // 
@@ -350,7 +337,6 @@
             this.materialLabel7.Size = new System.Drawing.Size(108, 19);
             this.materialLabel7.TabIndex = 18;
             this.materialLabel7.Text = "Complemento:";
-
             // 
             // txtNumero
             // 
@@ -366,7 +352,6 @@
             this.txtNumero.Size = new System.Drawing.Size(96, 23);
             this.txtNumero.TabIndex = 17;
             this.txtNumero.UseSystemPasswordChar = false;
-
             // 
             // materialLabel6
             // 
@@ -380,8 +365,6 @@
             this.materialLabel6.Size = new System.Drawing.Size(67, 19);
             this.materialLabel6.TabIndex = 16;
             this.materialLabel6.Text = "Numero:";
-
-
             // 
             // txtEmail
             // 
@@ -397,7 +380,6 @@
             this.txtEmail.Size = new System.Drawing.Size(424, 23);
             this.txtEmail.TabIndex = 15;
             this.txtEmail.UseSystemPasswordChar = false;
-
             // 
             // materialLabel5
             // 
@@ -411,7 +393,6 @@
             this.materialLabel5.Size = new System.Drawing.Size(55, 19);
             this.materialLabel5.TabIndex = 14;
             this.materialLabel5.Text = "E-mail:";
-
             // 
             // txtBairro
             // 
@@ -427,7 +408,6 @@
             this.txtBairro.Size = new System.Drawing.Size(224, 23);
             this.txtBairro.TabIndex = 13;
             this.txtBairro.UseSystemPasswordChar = false;
-
             // 
             // materialLabel4
             // 
@@ -441,7 +421,6 @@
             this.materialLabel4.Size = new System.Drawing.Size(53, 19);
             this.materialLabel4.TabIndex = 12;
             this.materialLabel4.Text = "Bairro:";
-
             // 
             // txtRua
             // 
@@ -457,7 +436,6 @@
             this.txtRua.Size = new System.Drawing.Size(310, 23);
             this.txtRua.TabIndex = 11;
             this.txtRua.UseSystemPasswordChar = false;
-
             // 
             // materialLabel3
             // 
@@ -471,7 +449,6 @@
             this.materialLabel3.Size = new System.Drawing.Size(38, 19);
             this.materialLabel3.TabIndex = 10;
             this.materialLabel3.Text = "Rua:";
-
             // 
             // txtCpf
             // 
@@ -487,7 +464,6 @@
             this.txtCpf.Size = new System.Drawing.Size(269, 23);
             this.txtCpf.TabIndex = 9;
             this.txtCpf.UseSystemPasswordChar = false;
-
             // 
             // materialLabel2
             // 
@@ -501,7 +477,6 @@
             this.materialLabel2.Size = new System.Drawing.Size(36, 19);
             this.materialLabel2.TabIndex = 8;
             this.materialLabel2.Text = "Cpf:";
-
             // 
             // txtNome
             // 
@@ -518,7 +493,6 @@
             this.txtNome.Size = new System.Drawing.Size(422, 23);
             this.txtNome.TabIndex = 7;
             this.txtNome.UseSystemPasswordChar = false;
-
             // 
             // materialLabel1
             // 
@@ -532,7 +506,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(124, 19);
             this.materialLabel1.TabIndex = 6;
             this.materialLabel1.Text = "Nome Completo:";
-
             // 
             // iconButton1
             // 

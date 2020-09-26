@@ -546,6 +546,7 @@
             this.iconADD.Size = new System.Drawing.Size(46, 50);
             this.iconADD.TabIndex = 5;
             this.iconADD.UseVisualStyleBackColor = true;
+            this.iconADD.Click += new System.EventHandler(this.iconADD_Click);
             // 
             // viewCliente
             // 
