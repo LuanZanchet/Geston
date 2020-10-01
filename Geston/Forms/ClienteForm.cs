@@ -115,6 +115,7 @@ namespace Geston.Forms
             foreach (DataGridViewRow row in viewCliente.SelectedRows)
                 id = Convert.ToInt32(row.Cells[0].Value.ToString());
             ClienteRepository.Delete(Cliente);
+            this.Refresh();
         }
     }
 }
