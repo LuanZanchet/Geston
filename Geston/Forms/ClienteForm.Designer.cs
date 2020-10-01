@@ -151,6 +151,7 @@
             this.iconExcluir.Size = new System.Drawing.Size(46, 50);
             this.iconExcluir.TabIndex = 35;
             this.iconExcluir.UseVisualStyleBackColor = true;
+            this.iconExcluir.Click += new System.EventHandler(this.iconExcluir_Click);
             // 
             // iconSalvar
             // 

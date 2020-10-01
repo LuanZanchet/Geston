@@ -1,4 +1,5 @@
 ﻿using Geston.Dal;
+using Geston.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace Geston.Forms
 {
     public partial class ClienteForm : Form
     {
+        Cliente Cliente = new Cliente();
 
         ClienteRepository ClienteRepository = new ClienteRepository();
         public ClienteForm()
@@ -85,7 +87,7 @@ namespace Geston.Forms
         }
         private void SetClienteTela(int Codigo)
         {
-            var Cliente = ClienteRepository.Get(Codigo);
+            Cliente = ClienteRepository.Get(Codigo);
             txtNome.Text = Cliente.Nome;
             txtTelefone.Text = Cliente.Telefone;
             txtBairro.Text = Cliente.Bairro;
@@ -105,6 +107,14 @@ namespace Geston.Forms
         private void iconADD_Click(object sender, EventArgs e)
         {
             new AddClienteForm().Show();
+        }
+
+        private void iconExcluir_Click(object sender, EventArgs e)
+        {
+            var id = 0;
+            foreach (DataGridViewRow row in viewCliente.SelectedRows)
+                id = Convert.ToInt32(row.Cells[0].Value.ToString());
+            ClienteRepository.Delete(Cliente);
         }
     }
 }

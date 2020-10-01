@@ -22,7 +22,7 @@ namespace Dados.Data
             return GlobalConnection.Connection.Update<T>(t);
         }
 
-        public virtual bool Deletar(T t)
+        public virtual bool Delete(T t)
         {
             return GlobalConnection.Connection.Delete<T>(t);
         }

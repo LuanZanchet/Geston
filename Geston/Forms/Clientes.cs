@@ -77,7 +77,7 @@ namespace Geston
         {
             var cliente = new Cliente();
             cliente.ID = Convert.ToInt32(txt_deletar.Text);
-            dal.Deletar(cliente);
+            dal.Delete(cliente);
             MessageBox.Show($"Cliente {Convert.ToInt64(txt_deletar.Text)} deletado com sucesso");
         }
     }
