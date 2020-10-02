@@ -103,23 +103,25 @@ namespace Geston.Forms
             txtUf.Text = Cliente.Uf;
             txtEmail.Text = "email@email.com";//Cliente.Email
         }
-        private void GetClienteTela(int Codigo)
+        private Cliente GetClienteTela()
         {
-            Cliente = ClienteRepository.Get(Codigo);
-            Cliente.Nome = txtNome.Text;
-            Cliente.Telefone  = txtTelefone.Text;
-            Cliente.Bairro =txtBairro.Text;
-            Cliente.Celular = txtCelular.Text;
-            Cliente.Cep = txtCep.Text;
-            txtCidade.Text = Cliente.Cidade;
-            txtComplemento.Text = Cliente.Complemento;
-            txtCpf.Text = Cliente.Cpf;
-            txtNascimento.Text = Cliente.Nascimento;
-            txtNumero.Text = Cliente.Numero;
-            txtRua.Text = Cliente.Rua;
-            txtTelefone.Text = Cliente.Telefone;
-            txtUf.Text = Cliente.Uf;
-            txtEmail.Text = "email@email.com";//Cliente.Email
+            var cliente = new Cliente();
+            cliente.ID = Cliente.ID;
+            cliente.Nome = txtNome.Text;
+            cliente.Telefone  = txtTelefone.Text;
+            cliente.Bairro =txtBairro.Text;
+            cliente.Celular = txtCelular.Text;
+            cliente.Cep = txtCep.Text;
+            cliente.Cidade =txtCidade.Text;
+            cliente.Complemento =txtComplemento.Text;
+            cliente.Cpf=txtCpf.Text;
+            cliente.Nascimento=txtNascimento.Text;
+            cliente.Numero=txtNumero.Text;
+            cliente.Rua=txtRua.Text;
+            cliente.Telefone=txtTelefone.Text;
+            cliente.Uf= txtUf.Text;
+            cliente.Email= txtEmail.Text;
+            return cliente;
         }
 
         private void iconADD_Click(object sender, EventArgs e)
@@ -138,7 +140,8 @@ namespace Geston.Forms
 
         private void iconSalvar_Click(object sender, EventArgs e)
         {
-
+            var Cliente = GetClienteTela();
+            ClienteRepository.Atualizar(Cliente);
         }
     }
 }
