@@ -103,6 +103,24 @@ namespace Geston.Forms
             txtUf.Text = Cliente.Uf;
             txtEmail.Text = "email@email.com";//Cliente.Email
         }
+        private void GetClienteTela(int Codigo)
+        {
+            Cliente = ClienteRepository.Get(Codigo);
+            Cliente.Nome = txtNome.Text;
+            Cliente.Telefone  = txtTelefone.Text;
+            Cliente.Bairro =txtBairro.Text;
+            Cliente.Celular = txtCelular.Text;
+            Cliente.Cep = txtCep.Text;
+            txtCidade.Text = Cliente.Cidade;
+            txtComplemento.Text = Cliente.Complemento;
+            txtCpf.Text = Cliente.Cpf;
+            txtNascimento.Text = Cliente.Nascimento;
+            txtNumero.Text = Cliente.Numero;
+            txtRua.Text = Cliente.Rua;
+            txtTelefone.Text = Cliente.Telefone;
+            txtUf.Text = Cliente.Uf;
+            txtEmail.Text = "email@email.com";//Cliente.Email
+        }
 
         private void iconADD_Click(object sender, EventArgs e)
         {
@@ -116,6 +134,11 @@ namespace Geston.Forms
                 id = Convert.ToInt32(row.Cells[0].Value.ToString());
             ClienteRepository.Delete(Cliente);
             this.Refresh();
+        }
+
+        private void iconSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

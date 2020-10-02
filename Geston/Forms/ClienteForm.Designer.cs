@@ -167,6 +167,7 @@
             this.iconSalvar.Size = new System.Drawing.Size(46, 50);
             this.iconSalvar.TabIndex = 34;
             this.iconSalvar.UseVisualStyleBackColor = true;
+            this.iconSalvar.Click += new System.EventHandler(this.iconSalvar_Click);
             // 
             // txtCelular
             // 
